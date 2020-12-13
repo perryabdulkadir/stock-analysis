@@ -34,7 +34,59 @@ Dim tickerVolumes(0 To 11) As Long
 Dim tickerStartingPrices(0 To 11) As Single
 Dim tickerEndingPrices(0 To 11) As Single
 ```
+Next, I created a for loop to initialize the tickerVolumes array to zero. I used this code taken [from here](https://excelmacromastery.com/excel-vba-array/#:~:text=To%20assign%20values%20to%20an%20array%20you%20use,is%20no%20location%204%20in%20the%20array%20example) to initialize a dynamic array. 
 
+```
+    For j = LBound(tickerVolumes) To UBound(tickerVolumes)
+        tickerVolumes(j) = 0
+        Next j
+```
+Next, I created a for loop to loop over all the rows in the spreadsheet. 
+
+```
+For i = 2 To RowCount
+```
+This code increases the volume if it is counting the current ticker: 
+```
+ tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+```
+And this code checks if the current row is the first or last of the selected tickerIndex. 
+
+```
+ If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1) <> Cells(i, 1) Then
+
+            tickerStartingPrices(tickerIndex) = Cells(i, 6)
+            
+        End If
+        
+        '3c) check if the current row is the last row with the selected ticker
+         
+        If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1) <> Cells(i, 1) Then
+            tickerEndingPrices(tickerIndex) = Cells(i, 6)
+```
+This code then increases the tickerIndex by one so that it loops through the next ticker and finally closes the for loop once all tickers have been counted. 
+
+```
+   tickerIndex = tickerIndex + 1
+            
+        End If
+    
+    Next i
+```
+
+Finally, this code outputs the Ticker, Total Daily Volume, and return. 
+
+```
+   For i = 0 To 11
+        
+        Worksheets("All Stocks Analysis").Activate
+        
+       Cells(4 + i, 1).Value = tickers(i)
+       Cells(4 + i, 2).Value = tickerVolumes(i)
+       Cells(4 + i, 3).Value = tickerEndingPrices(i) / (tickerStartingPrices(i)) - 1
+```
+
+The rest of the refactored code after this relates to formatting and is identical to the original code. 
 The refactored code ran more quickly than the original code. The original code calculated the results for 2017 in 0.602 seconds while the refactored code only took 0.094 seconds. Similarly, the original code took 0.594 seconds for 2018 while the refactored code took .094 seconds. 
 
 ![VBA_Challenge_2017.PNG](Resources/VBA_Challenge_2017.PNG)
