@@ -12,6 +12,11 @@ I was tasked with refactoring the code so it runs more quickly. Below, I go into
 
 One of the most striking aspects of the stock performance in 2017 and 2018 is the degree to which the stocks chosen are correlated. This intuitively makes sense: not only are they all subject to overall market fluctuations, but they are also likely to be highly correlated because of their shared industry. All but one stock had a positive return in 2017, and all but 2 had negative returns in 2018. 
 
+![2017_Returns.PNG](Resources/2017_Returns.PNG)
+
+
+![2018_Returns.PNG](Resources/2018_Returns.PNG)
+
 It would be worthwhile for Steve’s parents to investigate a more diversified portfolio. Perhaps foreign indices have green energy stocks that are less correlated with the 12 selected here. It is also noteworthy that the performance of these tickers was mostly negative in 2018, a year in which the market as a whole made gains. It would be prudent to investigate whether green stocks as a whole sank during this period or if the poor performance was limited to this selection of 12 tickers.
 
 ### Execution times: original vs. refactored code
