@@ -23,10 +23,10 @@ It would be worthwhile for Steve’s parents to investigate a more diversified p
 
 The refactored code diverges from the original code at first by creating the tickerIndex variable and setting it equal to 0. 
 
-'''
+```
 Dim tickerIndex As Integer
      tickerIndex = 0
-'''
+```
 The refactored code ran more quickly than the original code. The original code calculated the results for 2017 in 0.602 seconds while the refactored code only took 0.094 seconds. Similarly, the original code took 0.594 seconds for 2018 while the refactored code took .094 seconds. 
 
 ![VBA_Challenge_2017.PNG](Resources/VBA_Challenge_2017.PNG)
