@@ -17,7 +17,7 @@ One of the most striking aspects of the stock performance in 2017 and 2018 is th
 
 ![2018_Returns.PNG](Resources/2018_Returns.PNG)
 
-It would be worthwhile for Steve’s parents to investigate a more diversified portfolio. Perhaps foreign indices have green energy stocks that are less correlated with the 12 selected here. It is also noteworthy that the performance of these tickers was mostly negative in 2018, a year in which the market as a whole made gains. It would be prudent to investigate whether green stocks as a whole sank during this period or if the poor performance was limited to this selection of 12 tickers.
+It would be worthwhile for Steve’s parents to investigate a more diversified portfolio. Perhaps foreign indices have green energy stocks that are less correlated with the 12 selected here. It is also noteworthy that the performance of these tickers was mostly negative in 2018, a year in which the market as a whole made gains. It would be prudent to investigate whether green stocks generally sank during this period or if the poor performance were limited to this selection of 12 tickers.
 
 ### Execution times: original vs. refactored code
 
@@ -106,7 +106,7 @@ The other advantage of refactoring code is that it can be made for flexible. For
 
 Finally, refactoring code can make it easier for others to work with. Intuitive spacing, indentation, and liberal use of comments can all ensure that others can easily read your code, even if you are not around to help them. 
 
-Of course, the biggest downside to refactoring is that it requires more time. There may be some instances where code is only intended for one very specific purpose and it would be a waste of time to spend hours making the code more flexible when it will literally never be used for any other purpose.
+Of course, the biggest downside to refactoring is that it requires more time. There may be some instances where code is only intended for one very specific purpose, and it would be a waste of time to spend hours making the code more flexible when it will literally never be used for any other purpose.
 
 
 ### Pros and cons of refactoring our original stock analysis script
