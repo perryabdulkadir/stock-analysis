@@ -74,7 +74,7 @@ This code then increases the tickerIndex by one so that it loops through the nex
     Next i
 ```
 
-Finally, this code outputs the Ticker, Total Daily Volume, and return. 
+Finally, this code outputs the Ticker, Total Daily Volume, and Return. 
 
 ```
    For i = 0 To 11
