@@ -116,5 +116,13 @@ If, however, he uses this worksheet as a one-and-done to help his parents analyz
 
  
 
+-----
+
+### **Contact:**
+
+**Email:** perry.abdulkadir@alumni.harvard.edu
+
+**Linkedin:** https://www.linkedin.com/in/perry-abdulkadir-6a255199/
+
 
 
