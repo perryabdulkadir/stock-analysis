@@ -5,6 +5,8 @@ Steve reached out to me to help his parents select green energy stocks. I was pr
 
 I was tasked with refactoring the code so it runs more quickly. Below, I go into more detail for the refactoring process and discuss the implications of the stock performance. 
 
+## Resources
+Software: VBA, Excel
 
 ## Results
 
@@ -110,7 +112,7 @@ Of course, the biggest downside to refactoring is that it requires more time. Th
 
 
 ### Pros and cons of refactoring our original stock analysis script
-In my opinion, the value of this refactoring project depends on how Steve intends to use this worksheet in the future. If he intends to use this as a template to help other clients make decisions going forward, then the time saved by refactoring will likely pay dividends. As mentioned above, if he used this sheet to analyze all stocks in the NYSE, the refactoring would save about 2 minutes per calculation. If he added other indices, like foreign indices, commodities, etc., then the refactoring could potentially save many minutes or even hours per calculation. If he uses this worksheet for other clients going forward, he will also benefit from more intuitive code in case he at some point decides he needs to update the worksheet. 
+In my opinion, the value of this refactoring project depends on how Steve intends to use this worksheet in the future. If he intends to use this as a template to help other clients make decisions going forward, then the time saved by refactoring will likely pay dividends. As mentioned above, if he used this sheet to analyze all stocks in the NYSE, the refactoring would save about 2 minutes per calculation. If he added other classes of positions, like foreign indices, commodities, etc., then the refactoring could potentially save many minutes or even hours per calculation. If he uses this worksheet for other clients going forward, he will also benefit from more intuitive code in case he at some point decides he needs to update the worksheet. 
 
 If, however, he uses this worksheet as a one-and-done to help his parents analyze 12 green energy stocks, the refactoring is a waste of time. Even if used many times, no more than a few seconds would ever be saved by the end-user at the expense of several hours of programming. Furthermore, if he only intends to use the worksheet for this very narrow purpose, it is less critical that the code be flexible and intuitive to edit. 
 
