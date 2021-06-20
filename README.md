@@ -1,4 +1,4 @@
-# Stock Analysis
+# Green Energy Stock Analysis
 
 ## Overview of Project
 Steve reached out to me to help his parents select green energy stocks. I was provided an Excel spreadsheet with data for 12 different green energy stocks. This spreadsheet has one sheet for 2017 and one sheet for 2018; both sheets list the Open, High, Low, Close, and Adjusted Close prices, as well as the volume traded, for each ticker on a given trading day. This spreadsheet already had a macro that calculated total daily volume and annual return for each ticker after the user selected a year to analyze.
